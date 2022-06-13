@@ -2403,7 +2403,7 @@ export default class Trace {
 
     askRoute2(a, b, layer) {
         const Http = new XMLHttpRequest();
-        var url = `https://https://route.reseenduro.workers.dev?lonlats=${a.lng},${a.lat}|${b.lng},${b.lat}&profile=${this.buttons.activity}&alternativeidx=0&format=geojson`;
+        var url = `https://route.reseenduro.workers.dev?lonlats=${a.lng},${a.lat}|${b.lng},${b.lat}&profile=${this.buttons.activity}&alternativeidx=0&format=geojson`;
         Http.open("GET", url);
         Http.send();
 
