@@ -2332,8 +2332,8 @@ export default class Trace {
 
     askRoute(a, b, c, layer) {
         const Http = new XMLHttpRequest();
-        var url = (a.equals(b) || b.equals(c)) ? `https://routing.gpx.studio?lonlats=${a.lng},${a.lat}|${c.lng},${c.lat}&profile=${this.buttons.activity}&alternativeidx=0&format=geojson` :
-            `https://routing.gpx.studio?lonlats=${a.lng},${a.lat}|${b.lng},${b.lat}|${c.lng},${c.lat}&profile=${this.buttons.activity}&alternativeidx=0&format=geojson`;
+        var url = (a.equals(b) || b.equals(c)) ? `https://route.reseenduro.workers.dev?lonlats=${a.lng},${a.lat}|${c.lng},${c.lat}&profile=${this.buttons.activity}&alternativeidx=0&format=geojson` :
+            `https://route.reseenduro.workers.dev?lonlats=${a.lng},${a.lat}|${b.lng},${b.lat}|${c.lng},${c.lat}&profile=${this.buttons.activity}&alternativeidx=0&format=geojson`;
         Http.open("GET", url);
         Http.send();
 
