@@ -690,7 +690,7 @@ export default class Buttons {
                             },
                             rendererFactory: L.canvas.tile
                         });
-                    } else */
+                    } else*/
                     {
                         delete baselayersHierarchy["Basemaps"]["World"]["Mapbox Outdoors"];
                         delete baselayersHierarchy["Basemaps"]["World"]["Mapbox Satellite"];
