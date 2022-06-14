@@ -545,6 +545,7 @@ export default class Buttons {
                                 "Lantmäteriet Flygfoto 1975": layers.lantFlyg75,
                                 "Lantmäteriet Flygfoto 1960": layers.lantFlyg60,
                                 "Google Satellite": layers.googleSatellite,
+                            }
                         }
                     };
 
