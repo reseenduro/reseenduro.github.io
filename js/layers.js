@@ -163,7 +163,76 @@ const layers = {
         maxZoom: 20,
         maxNativeZoom: 14,
         attribution: '&copy; <a href="https://www.strava.com" target="_blank">Strava</a>'
-    })
+    }),
+    //ReseEnduro maps:
+    lantTopo: L.tileLayer('https://minkarta.lantmateriet.se/map/topowebbcache/?layer=topowebb&style=default&tilematrixset=3857&Service=WMTS&Request=GetTile&Version=1.0.0&Format=image%2Fpng&TileMatrix={z}&TileCol={x}&TileRow={y}', {
+        maxZoom: 20,
+        maxNativeZoom: 17,
+        attribution: '&copy; <a href="https://www.lantmateriet.se" target="_blank">Lantmäteriet</a>',
+    }),
+    hittaTopo: L.tileLayer('https://static.hitta.se/tile/v3/4_2x/{z}/{x}/{-y}', {
+        maxZoom: 20,
+        maxNativeZoom: 17,
+        attribution: '&copy; <a href="https://www.hitta.se" target="_blank">hitta.se</a>'
+    }),
+    hittaSatellite: L.tileLayer('https://static.hitta.se/tile/v3/1/{z}/{x}/{-y}', {
+        maxZoom: 20,
+        maxNativeZoom: 19,
+        attribution: '&copy; <a href="https://www.hitta.se" target="_blank">hitta.se</a>'
+    }),
+    eniroTopo: L.tileLayer('https://map04.eniro.no/geowebcache/service/tms1.0.0/map/{z}/{x}/{-y}.png', {
+        maxZoom: 20,
+        maxNativeZoom: 18,
+        attribution: '&copy; <a href="https://www.eniro.se" target="_blank">eniro</a>'
+    }),
+    eniroSatellite: L.tileLayer('https://map01.eniro.no/geowebcache/service/tms1.0.0/aerial/{z}/{x}/{-y}.jpeg', {
+        maxZoom: 20,
+        maxNativeZoom: 19,
+        attribution: '&copy; <a href="https://www.eniro.se" target="_blank">eniro</a>'
+    }),
+    lantFlyg: L.tileLayer.wms('https://minkarta.lantmateriet.se/map/ortofoto/?', {
+        layers: 'Ortofoto_0.5,Ortofoto_0.4,Ortofoto_0.25,Ortofoto_0.16',
+        format: 'image/png',
+        tiled: true,
+        maxZoom: 20,
+    }),
+    lantFlyg75: L.tileLayer.wms('https://minkarta.lantmateriet.se/map/historiskaortofoto/?', {
+        layers: 'OI.Histortho_75',
+        format: 'image/png',
+        tiled: true,
+        maxZoom: 20,
+    }),
+    lantFlyg60: L.tileLayer.wms('https://minkarta.lantmateriet.se/map/historiskaortofoto/?', {
+        layers: 'OI.Histortho_60',
+        format: 'image/png',
+        tiled: true,
+        maxZoom: 20,
+    }),
+    googleSatellite: L.tileLayer('https://www.google.cn/maps/vt?lyrs=s@189&gl=cn&x={x}&y={y}&z={z}', {
+        maxZoom: 20,
+        maxNativeZoom: 18,
+    }),
+    slitlager: L.tileLayer.wms('https://geo-netinfo.trafikverket.se/MapService/wms.axd/NetInfo_1_1?', {
+        layers: 'Slitlager',
+        format: 'image/png',
+        transparent: true,
+        maxZoom: 20,
+        maxNativeZoom: 15,
+    }),
+    vaghinder: L.tileLayer.wms('https://geo-netinfo.trafikverket.se/MapService/wms.axd/NetInfo_1_1?', {
+        layers: 'Vaghinder',
+        format: 'image/png',
+        transparent: true,
+        maxZoom: 20,
+        maxNativeZoom: 15,
+    }),
+    driftbidragStatligt: L.tileLayer.wms('https://geo-netinfo.trafikverket.se/MapService/wms.axd/NetInfo_1_1?', {
+        layers: 'DriftbidragStatligt',
+        format: 'image/png',
+        transparent: true,
+        maxZoom: 20,
+        maxNativeZoom: 15,
+    }),
 };
 
 const overPassMinZoomOptions =  {
