@@ -535,15 +535,15 @@ export default class Buttons {
                                 "United Kingdom": { "Ordnance Survey": layers.ordnanceSurvey },
                                 "United States": { "USGS": layers.usgs }
                             },
-                            "ReseEnduro": {
-                                "Lantmäteriet Topo": layers.lantTopo,
+                            "Sverige": {
+                                "Lantm. Topo": layers.lantTopo,
                                 "Hitta.se Topo": layers.hittaTopo,
-                                "Hitta.se Satellite": layers.hittaSatellite,
+                                "Hitta.se Flygfoto": layers.hittaSatellite,
                                 "Eniro Topo": layers.eniroTopo,
-                                "Eniro Satellite": layers.eniroSatellite,
-                                "Lantmäteriet Flygfoto": layers.lantFlyg,
-                                "Lantmäteriet Flygfoto 1975": layers.lantFlyg75,
-                                "Lantmäteriet Flygfoto 1960": layers.lantFlyg60,
+                                "Eniro Flygfoto": layers.eniroSatellite,
+                                "Lantm. Flygfoto": layers.lantFlyg,
+                                "Lantm. Flygfoto75": layers.lantFlyg75,
+                                "Lantm. Flygfoto60": layers.lantFlyg60,
                                 "Google Satellite": layers.googleSatellite,
                             }
                         }
@@ -577,7 +577,7 @@ export default class Buttons {
                                     "swisstopo Mountain Bike": layers.swisstopoMountainBike,
                                 }
                             },
-                            "ReseEnduro": {
+                            "Sverige": {
                                 "Slitlager": layers.slitlager,
                                 "Väghinder": layers.vaghinder,
                                 "DriftbidragStatligt": layers.driftbidragStatligt,
@@ -588,20 +588,20 @@ export default class Buttons {
                     var baselayerSelection = {
                         "Basemaps": {
                             "World": {
-                                "OpenStreetMap": true,
-                                "OpenTopoMap": true,
-                                "OpenHikingMap": true,
+                                "OpenStreetMap" : true,
+                                "OpenTopoMap" : true,
+                                "OpenHikingMap" : true,
                                 "CyclOSM" : true
                             },
-                            "ReseEnduro": {
-                                "Lantmäteriet Topo" : true,
+                            "Sverige": {
+                                "Lantm. Topo" : true,
                                 "Hitta.se Topo" : true,
-                                "Hitta.se Satellite" : true,
+                                "Hitta.se Flygfoto" : true,
                                 "Eniro Topo" : true,
-                                "Eniro Satellite" : true,
-                                "Lantmäteriet Flygfoto": true,
-                                "Lantmäteriet Flygfoto 1975" : true,
-                                "Lantmäteriet Flygfoto 1960" : true,
+                                "Eniro Flygfoto" : true,
+                                "Lantm. Flygfoto" : true,
+                                "Lantm. Flygfoto75" : true,
+                                "Lantm. Flygfoto60" : true,
                                 "Google Satellite" : true,
                             },
                         }
@@ -623,7 +623,7 @@ export default class Buttons {
                                 "Horse riding": true,
                                 "Slopes": true
                             },
-                            "ReseEnduro": {
+                            "Sverige": {
                                 "Slitlager" : true,
                                 "Väghinder" : true,
                                 "DriftbidragStatligt" : true,
