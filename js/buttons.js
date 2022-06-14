@@ -534,7 +534,17 @@ export default class Buttons {
                                 "Switzerland": { "swisstopo": layers.swisstopo },
                                 "United Kingdom": { "Ordnance Survey": layers.ordnanceSurvey },
                                 "United States": { "USGS": layers.usgs }
-                            }
+                            },
+                            "ReseEnduro": {
+                                "Lantmäteriet Topo": layers.lantTopo,
+                                "Hitta.se Topo": layers.hittaTopo,
+                                "Hitta.se Satellite": layers.hittaSatellite,
+                                "Eniro Topo": layers.eniroTopo,
+                                "Eniro Satellite": layers.eniroSatellite,
+                                "Lantmäteriet Flygfoto": layers.lantFlyg,
+                                "Lantmäteriet Flygfoto 1975": layers.lantFlyg75,
+                                "Lantmäteriet Flygfoto 1960": layers.lantFlyg60,
+                                "Google Satellite": layers.googleSatellite,
                         }
                     };
 
@@ -565,7 +575,12 @@ export default class Buttons {
                                     "swisstopo Cycling": layers.swisstopoCycling,
                                     "swisstopo Mountain Bike": layers.swisstopoMountainBike,
                                 }
-                            }
+                            },
+                            "ReseEnduro": {
+                                "Slitlager": layers.slitlager,
+                                "Väghinder": layers.vaghinder,
+                                "DriftbidragStatligt": layers.driftbidragStatligt,
+                            },
                         }
                     };
 
@@ -576,7 +591,18 @@ export default class Buttons {
                                 "OpenTopoMap": true,
                                 "OpenHikingMap": true,
                                 "CyclOSM" : true
-                            }
+                            },
+                            "ReseEnduro": {
+                                "Lantmäteriet Topo" : true,
+                                "Hitta.se Topo" : true,
+                                "Hitta.se Satellite" : true,
+                                "Eniro Topo" : true,
+                                "Eniro Satellite" : true,
+                                "Lantmäteriet Flygfoto": true,
+                                "Lantmäteriet Flygfoto 1975" : true,
+                                "Lantmäteriet Flygfoto 1960" : true,
+                                "Google Satellite" : true,
+                            },
                         }
                     };
 
@@ -596,10 +622,15 @@ export default class Buttons {
                                 "Horse riding": true,
                                 "Slopes": true
                             },
+                            "ReseEnduro": {
+                                "Slitlager" : true,
+                                "Väghinder" : true,
+                                "DriftbidragStatligt" : true,
+                            },
                             "POI": pointsOfInterestLayerSelection
                         }
                     };
-
+/*
                     if (_this.supportsWebGL()) {
                         _this.mapboxMap = L.mapboxGL({
                             attribution: '&copy; <a href="https://www.mapbox.com/about/maps/" target="_blank">Mapbox</a> &copy; <a href="https://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a>',
@@ -658,7 +689,8 @@ export default class Buttons {
                             },
                             rendererFactory: L.canvas.tile
                         });
-                    } else {
+                    } else */
+                    {
                         delete baselayersHierarchy["Basemaps"]["World"]["Mapbox Outdoors"];
                         delete baselayersHierarchy["Basemaps"]["World"]["Mapbox Satellite"];
                         delete baselayersHierarchy["Basemaps"]["Countries"]["New Zealand"];
@@ -786,7 +818,7 @@ export default class Buttons {
                 _this.updatingStravaCookies = false;
             }
         }
-        xhr.open('GET', 'https://s.gpx.studio');
+        xhr.open('GET', 'https://cookie.reseenduro.workers.dev');
         xhr.send();
     }
 
