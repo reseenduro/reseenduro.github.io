@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <providers>
+       <provider id="10091" type="1" visible="true" background="-1">
+            <name>Hitta</name>
+            <mode>frilufts</mode>
+            <countries>Sverige</countries>
+            <url><![CDATA[https://static.hitta.se/tile/v3/4{ts}/{z}/{x}/{y}]]></url>
+            <zoomPart>{z}-8</zoomPart>
+            <zoomMin>12</zoomMin>
+            <zoomMax>25</zoomMax>
+            <tileSize>256</tileSize>
+            <tileScale dpi="0" multi="2.0" replace="_2x" />
+            <usage>frilufts</usage>
+	      </provider>
+    </providers>
