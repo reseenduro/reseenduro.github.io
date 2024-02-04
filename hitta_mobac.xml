@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<customMapSource>
+   <name>Hitta Frilufts</name>
+   <minZoom>0</minZoom>
+   <maxZoom>18</maxZoom>
+   <tileType>png</tileType>
+   <url>http://static.hitta.se/tile/v3/4_2x/{$z}/{$x}/{$y}</url>
+   <tileUpdate>None</tileUpdate>
+   <invertYCoordinate>true</invertYCoordinate>
+   <backgroundColor>#000000</backgroundColor>
+   <ignoreErrors>false</ignoreErrors>
+   <serverParts></serverParts>
+</customMapSource>
